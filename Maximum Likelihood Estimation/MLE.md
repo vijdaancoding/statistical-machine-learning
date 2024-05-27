@@ -32,7 +32,7 @@ Finding the optimal mean and standard deviation can be pretty straight-forward b
 #### Step 1: Apply the Log Transformation 
 
 The equation we are applying a log transformation on is the same we saw above: 
-$$\frac{1}{\sqrt{2\pi\sigma^2}}e^{-(x_1 - \mu)^2/2\sigma^2 }   *...* \frac{1}{\sqrt{2\pi\sigma^2}}e^{-(x_n - \mu)^2/2\sigma^2 } $$
+$$\frac{1}{\sqrt{2\pi\sigma^2}}e^{-(x_1 - \mu)^2/2\sigma^2 } \cdot \frac{1}{\sqrt{2\pi\sigma^2}}e^{-(x_2 - \mu)^2/2\sigma^2 } \cdot \ldots \cdot \frac{1}{\sqrt{2\pi\sigma^2}}e^{-(x_n - \mu)^2/2\sigma^2 }$$
 By applying a log on this we are able to change the multiplication signs into addition
 $$\log{(\frac{1}{\sqrt{2\pi\sigma^2}}e^{-(x_1 - \mu)^2/2\sigma^2 } )  }+...+ \log{(\frac{1}{\sqrt{2\pi\sigma^2}}e^{-(x_n - \mu)^2/2\sigma^2 } )}$$
 By breaking each term down the entire equation can be simplified into 
@@ -76,8 +76,16 @@ $$\frac{dl_n}{d\beta_0} = \sum_{i=1}^{n}\frac{y_i - (\beta_0 + \beta_1x_i)}{\sig
 
 $$\frac{dl_n}{d\beta_1} = \sum_{i=1}^{n}\frac{y_i - (\beta_0 + \beta_1x_i)}{\sigma^2}$$
 #### Step 3: Set Derivatives to 0
-$$\beta_0 = \frac{\sum_{i=1}^{n} y_i - \beta_1\sum_{i=1}^{n} x_i}{n}$$
-$$\beta_1 = \frac{\sum_{i=1}^{n}(x_i - \overline{x})(y_i - \overline{y})}{\sum_{i=1}^{n}(x_i-\overline{x})^2}$$
+
+$$
+\beta_0 = \frac{\sum_{i=1}^{n} y_i - \beta_1\sum_{i=1}^{n} x_i}{n}
+$$
+
+$$
+\beta_1 = \frac{\sum_{i=1}^{n}(x_i - \overline{x})(y_i - \overline{y})}{\sum_{i=1}^{n}(x_i - \overline{x})^2}
+$$
+
+
 #### Step 4: Estimate Variance 
 $$\sigma^2 = \frac{1}{n}\sum_{i=1}^{n}(y_i - \hat{y_i})^2$$
 
