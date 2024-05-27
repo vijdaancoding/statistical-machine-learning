@@ -1,3 +1,5 @@
+# Maximum Likelihood Estimation
+
 ## MLE and Normal Distribution 
 
 ## The Theory behind 1 data point 
