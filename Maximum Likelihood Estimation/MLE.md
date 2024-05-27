@@ -11,9 +11,11 @@ Seeing the equation we realize that it has 2 unknown variables and 1 variable fo
 $$L(\mu, \sigma | x)$$
 Our goal is to find the Maximum Likelihood, to do this we can substitute $x, \mu,$ and $\sigma$ in the equation. By keeping 2 variables constant and changing the 3rd we are able to get a graph through which we can know the maximum likelihood for both $\mu$ and $\sigma$. 
 
-![[MLE for mean.png]]
+![image](https://github.com/vijdaancoding/statistical-machine-learning/assets/131896316/fb5ea852-504e-4362-9437-16263aa35b94)
 
-![[MLE for std.png]]
+
+![image](https://github.com/vijdaancoding/statistical-machine-learning/assets/131896316/5b25e829-ecc5-499d-881d-bd483a6c7c49)
+
 
 #### The Theory behind 2 data points 
 
