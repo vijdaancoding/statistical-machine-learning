@@ -4,7 +4,7 @@ The repository was made to create documentations and sample codes of foundationa
 
 ## Table Of Contents 
 
-- [Poisson Regression]('Poisson Regression'/PoissonRegression.md)
-- [Maximum Likelihood Estimation]('Maximum Likelihood Estimation'/MLE.md)
+- [Poisson Regression](Poisson%20Regression/PoissonRegression.md)
+- [Maximum Likelihood Estimation](Maximum%20Likelihood%20Estimation/MLE.md)
 
 
